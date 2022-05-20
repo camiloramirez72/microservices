@@ -1,5 +1,7 @@
+# Server
 server:
   port: 8081
+
 spring:
   cloud:
     config:
@@ -9,4 +11,4 @@ spring:
           uri: https://github.com/camiloramirez72/microservices
           search-paths: config-data
   application:
-    name: config-srvice
+    name: config-service

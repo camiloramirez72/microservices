@@ -1,6 +1,6 @@
 spring:
-  appication:
-  name: car-microservice
+  application:
+    name: car-microservice
   cloud:
     config:
       enabled: true
