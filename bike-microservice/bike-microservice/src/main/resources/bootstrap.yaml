@@ -1,6 +1,6 @@
 spring:
-  appication:
-  name: bike-microservice
+  application:
+    name: bike-microservice
   cloud:
     config:
       enabled: true
