@@ -9,11 +9,13 @@
         <module name="car-microservice" />
         <module name="user-microservice" />
         <module name="bike-microservice" />
+        <module name="config-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bike-microservice" target="11" />
       <module name="car-microservice" target="11" />
+      <module name="config-service" target="11" />
       <module name="user-microservice" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -21,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="bike-microservice" options="-parameters" />
       <module name="car-microservice" options="-parameters" />
+      <module name="config-service" options="-parameters" />
       <module name="user-microservice" options="-parameters" />
     </option>
   </component>
