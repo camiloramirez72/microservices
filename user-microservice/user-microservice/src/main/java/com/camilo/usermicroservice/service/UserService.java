@@ -51,7 +51,7 @@ public class UserService {
     }
 
     public List<Bike> getBikes(int userId){
-        List<Bike> bikes = restTemplate.getForObject("http://localhost:8004/bike/byuser/" + userId, List.class);
+        List<Bike> bikes = restTemplate.getForObject("http://bike-microservice/bike/byuser/" + userId, List.class);
         return bikes;
     }
 

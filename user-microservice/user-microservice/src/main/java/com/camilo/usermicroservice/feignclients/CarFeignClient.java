@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name = "car-service", url = "http://localhost:8003", decode404 = true)
+@FeignClient(name = "car-microservice", decode404 = true)
 public interface CarFeignClient {
 
     @RequestMapping(method = RequestMethod.POST, value = "/car")
