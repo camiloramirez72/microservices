@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0a94c2e-e0c5-4efe-8a92-da3ef588657b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/bike-microservice/bike-microservice/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/bike-microservice/bike-microservice/src/main/resources/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-data/bike-microservice.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/bike-microservice.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-data/car-microservice.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/car-microservice.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/user-microservice/user-microservice/target/" />
     <ignored path="$PROJECT_DIR$/bike-microservice/bike-microservice/target/" />
@@ -34,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/car-microservice/car-microservice/src/main/resources/bootstrap.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -52,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/config-data/user-microservice.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -161,23 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="proyectosJava" type="58d84e3e:PackageViewProjectNode" />
-              <item name="user-microservice" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="proyectosJava" type="58d84e3e:PackageViewProjectNode" />
-              <item name="user-microservice" type="616d4139:PackageViewModuleNode" />
-              <item name="com.camilo.usermicroservice" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,6 +264,23 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="proyectosJava" type="58d84e3e:PackageViewProjectNode" />
+              <item name="user-microservice" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="proyectosJava" type="58d84e3e:PackageViewProjectNode" />
+              <item name="user-microservice" type="616d4139:PackageViewModuleNode" />
+              <item name="com.camilo.usermicroservice" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -394,7 +392,7 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17270789" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17430703" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Project Explorer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -405,7 +403,7 @@
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.47887325" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47887325" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35211268" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -701,14 +699,14 @@
     <entry file="file://$PROJECT_DIR$/car-microservice/car-microservice/src/main/resources/bootstrap.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config-data/user-microservice.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
