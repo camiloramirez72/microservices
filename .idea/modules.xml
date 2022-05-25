@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/bike-microservice/bike-microservice/bike-microservice.iml" filepath="$PROJECT_DIR$/bike-microservice/bike-microservice/bike-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/car-microservice/car-microservice/car-microservice.iml" filepath="$PROJECT_DIR$/car-microservice/car-microservice/car-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-service/config-service.iml" filepath="$PROJECT_DIR$/config-service/config-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service/eureka-service.iml" filepath="$PROJECT_DIR$/eureka-service/eureka-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/proyectosJava.iml" filepath="$PROJECT_DIR$/.idea/proyectosJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-microservice/user-microservice/user-microservice.iml" filepath="$PROJECT_DIR$/user-microservice/user-microservice/user-microservice.iml" />
     </modules>
