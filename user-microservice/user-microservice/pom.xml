@@ -58,6 +58,17 @@
 		</dependency>
 		<!-- end circuit breaker -->
 
+		<!-- zipkin/sleut -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-sleuth-zipkin</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
+		<!-- end -->
+
 
 		<dependency>
 			<groupId>com.h2database</groupId>

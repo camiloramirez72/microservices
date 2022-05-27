@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          default-label: circuit-breaker
+          default-label: zipkin
           uri: https://github.com/camiloramirez72/microservices
           search-paths: config-data
   application:
