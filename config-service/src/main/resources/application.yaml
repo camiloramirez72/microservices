@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          default-label: zipkin
+          default-label: keycloak
           uri: https://github.com/camiloramirez72/microservices
           search-paths: config-data
   application:

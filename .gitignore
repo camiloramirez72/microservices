@@ -34,3 +34,6 @@ build/
 
 ### zipkin ###
 zipkin-server-2.23.16-exec.jar
+
+### keycloak ###
+keycloak-18.0.1/
