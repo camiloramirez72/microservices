@@ -16,6 +16,7 @@ public class SecurityGateway {
         http.authorizeExchange().anyExchange().authenticated()
                 .and()
                 .oauth2Login(Customizer.withDefaults());
+        http.csrf().disable();
         return http.build();
     }
 }
