@@ -12,7 +12,7 @@ import org.springframework.security.web.server.SecurityWebFilterChain;
 public class SecurityGateway {
 
     @Bean
-    public SecurityWebFilterChain filterChain(ServerHttpSecurity http){
+    public SecurityWebFilterChain filterChain(ServerHttpSecurity http) {
         http.authorizeExchange().anyExchange().authenticated()
                 .and()
                 .oauth2Login(Customizer.withDefaults());

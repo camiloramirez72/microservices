@@ -13,9 +13,9 @@ eureka:
 spring:
   cloud:
     gateway:
+      default-filters:
+        - TokenRelay
       discovery:
-        default-filters:
-          - TokenRelay
         locator:
           enabled: true
       routes:
@@ -33,19 +33,20 @@ spring:
           uri: lb://bike-microservice
           predicates:
             - Path=/bike/**
-    security:
-      oauth2:
-        client:
-          provider:
-            keycloak:
-              authorization-uri: http://localhost:8580/realms/tutorial-realm/protocol/openid-connect/auth
-              userinfo-uri: http://localhost:8580/realms/tutorial-realm/protocol/openid-connect/userinfo
-              user-name-attribute: preferred_username
-              token-uri: http://localhost:8580/realms/tutorial-realm/protocol/openid-connect/token
-          registration:
-            tutorial-client:
-              provider: keycloak
-              client-id: tutorial-client
-              client-secret: uaHRBkQnPFjL04ZsDQ4Xq0dRn30EP92p
-              authorization-grant-type: authorization_code
-              redirect-uri: "{baseUrl}/login/oauth2/code/tutorial-client"
+
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            authorization-uri: http://localhost:8580/realms/tutorial-realm/protocol/openid-connect/auth
+            userinfo-uri: http://localhost:8580/realms/tutorial-realm/protocol/openid-connect/userinfo
+            user-name-attribute: preferred_username
+            token-uri: http://localhost:8580/realms/tutorial-realm/protocol/openid-connect/token
+        registration:
+          tutorial-client:
+            provider: keycloak
+            client-id: tutorial-client
+            client-secret: uaHRBkQnPFjL04ZsDQ4Xq0dRn30EP92p
+            authorization-grant-type: authorization_code
+            redirect-uri: "{baseUrl}/login/oauth2/code/tutorial-client"
