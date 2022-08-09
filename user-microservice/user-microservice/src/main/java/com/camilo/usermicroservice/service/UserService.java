@@ -7,8 +7,9 @@ import com.camilo.usermicroservice.model.Bike;
 import com.camilo.usermicroservice.model.Car;
 import com.camilo.usermicroservice.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -42,17 +43,27 @@ public class UserService {
         return newUser;
     }
 
-    public List<Car> getCars(int userId){
-        //List<Car> cars = restTemplate.getForObject("http://localhost:8003/car/byuser/" + userId, List.class);
+    public List getCars(int userId){
+        Jwt jwt = (Jwt) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add("Authorization", "Bearer " + jwt.getTokenValue());
+        ResponseEntity<List> cars = restTemplate.exchange("http://localhost:8003/car/byuser/" + userId, HttpMethod.GET, new HttpEntity<>(httpHeaders),List.class);
+        return cars.getBody();
+        /*
         ResponseEntity<List<Car>> response = carFeignClient.getCar(userId);
         if (response.getStatusCode()== HttpStatus.OK)
             return response.getBody();
         return Collections.emptyList();
+
+         */
     }
 
-    public List<Bike> getBikes(int userId){
-        List<Bike> bikes = restTemplate.getForObject("http://bike-microservice/bike/byuser/" + userId, List.class);
-        return bikes;
+    public List getBikes(int userId){
+        Jwt jwt = (Jwt) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add("Authorization", "Bearer " + jwt.getTokenValue());
+        ResponseEntity<List> bikes = restTemplate.exchange("http://bike-microservice/bike/byuser/" + userId, HttpMethod.GET, new HttpEntity<>(httpHeaders), List.class);
+        return bikes.getBody();
     }
 
     public Car saveCar(int userId, Car car){
